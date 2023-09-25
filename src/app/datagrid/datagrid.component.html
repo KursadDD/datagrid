@@ -1,0 +1,30 @@
+<dx-data-grid
+  id="dataGrid"
+  [dataSource]="employees"
+  keyExpr="Id"
+  [showBorders]="true"
+  [width]="'100%'"
+  (onRowInserted)="onRowInserted($event)"
+  (onRowUpdated)="onRowUpdated($event)"
+  (onRowRemoved)="onRowRemoved($event)"
+>
+  <dxo-search-panel [visible]="true"></dxo-search-panel>
+  <dxo-header-filter [visible]="true"></dxo-header-filter>
+
+  <dxi-column caption="Sosyal Medya Linki" dataField="Link">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column caption="Sosyal Medya Adı" dataField="Name">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column caption="Açıklama" dataField="Description">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxo-editing
+    mode="popup"
+    [allowUpdating]="true"
+    [allowDeleting]="true"
+    [allowAdding]="true"
+  >
+  </dxo-editing>
+</dx-data-grid>

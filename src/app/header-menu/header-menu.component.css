@@ -1,0 +1,26 @@
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+}
+
+.logo{
+    text-align: center;
+    vertical-align: middle;justify-items: center;
+}
+.menu-item{
+    text-align: center;
+}
+
+.social-medya{
+    text-align: right; 
+}
+.social-medya>i{
+    margin: 3%;
+}
+.social-medya>i:last-child{
+    margin-right: 30%;
+}
