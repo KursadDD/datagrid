@@ -1,0 +1,18 @@
+1. Projeden ne anladığınızı ve hangi adımları izleyerek ilerlediğinizi bir doküman olarak yazıp proje içerisine ekleyiniz (15P)
+    
+    ANLADIKLARIM
+* Bir header menü tasarlanacak, bu menudeki alanlar tıklanabilir olacak. Rast mobile sitelerine ait lınkler bu alanlara verilecek.
+* Devxtreem kullanılarak bir data grid eklenecek (veya başka bir kütüphane)
+* Datalar proje içeriside bir değişkende tutulmayacak, yani sayfa yenilendiğinde verilerin kaybolmaması gerekir. 
+    Bundan dolayı verileri kişinin tarayıcısında yani localstorage da tutmam gerekiyor
+* Datagridde ekleme ve search yapabilme alanları aktif olacak
+* Tasarım responsive yani mobil uyumlu olursa güzel olur.
+    
+    YAPILANLAR VE YAPILMA AŞAMALARI
+* Header menu tasarlandı, iconlar figmadan alındı. Rast mobile ait web site ve sosyal medya hesaplarının linkleri kullanılarak menu tıklanabilir hale getirildi.
+* Datagrid kullanabilmek için Devxtreem paketi projeye install edilde.
+* Header menu ve tablo alanları ayrı birer component olarak tasarlandı ve app.component.html içeriinde birleştirildi
+* Datagrid de headerfilter, search, sorting özellikleri aktif edildi
+* Veri ekle, sil, güncelle işlemleri için gerekli service yazıldı ve metotları localstorage ile haberleşecek şekilde kurgunlandı
+* Bonus - İsterlerde sadece veri ekleme vardı ama silme ve güncelleme işlemlei için grid de en sağ kolonda butonlar aktif edildi.
+* Model oluşturuldu ve eklenecek datanın tipi belirtirldi
