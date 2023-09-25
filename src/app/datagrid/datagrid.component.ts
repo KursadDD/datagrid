@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DatagridServiceService } from 'src/services/datagrid-service.service';
+import { DatagridServiceService } from 'src/app/services/datagrid-service.service';
 
 @Component({
   selector: 'app-datagrid',
